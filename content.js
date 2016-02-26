@@ -85,12 +85,12 @@ function handleText(textNode)
   "Lumbering human-like tardigrade",
   "A tiny piece of dried cat poop that you found in your rug"]
   var v = textNode.nodeValue;
-  v = v.replace(/\bDonald John Trump\b/g, "Donald John Trump, " + names[Math.round(Math.random()*names.length)]);
-  v = v.replace(/\bDonald Trump\b/g, "Donald Trump, " +  names[Math.round(Math.random()*names.length)]);
-  v = v.replace(/\bTrump\b/g, "Trump, " +  names[Math.round(Math.random()*names.length)]);
-  v = v.replace(/\btrump\b/g,  "Trump, " + names[Math.round(Math.random()*names.length)]);
-  v = v.replace(/\bDonald John\b/g,  "Donald John, " + names[Math.round(Math.random()*names.length)]);
-  v = v.replace(/\bDonald J\b/g,  "Donald J, " + names[Math.round(Math.random()*names.length)]);
+  v = v.replace(/\bDonald John Trump\b/g, names[Math.round(Math.random()*names.length)]);
+  v = v.replace(/\bDonald Trump\b/g, names[Math.round(Math.random()*names.length)]);
+  v = v.replace(/\bTrump\b/g, names[Math.round(Math.random()*names.length)]);
+  v = v.replace(/\btrump\b/g, names[Math.round(Math.random()*names.length)]);
+  v = v.replace(/\bDonald John\b/g, names[Math.round(Math.random()*names.length)]);
+  v = v.replace(/\bDonald J\b/g, names[Math.round(Math.random()*names.length)]);
 
   textNode.nodeValue = v;
 }
