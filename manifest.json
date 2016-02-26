@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Jezebel Trump Replace",
+  "description": "Replaces Donald Trump with one of many colorful phrases that Jezebel has used to describe him",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
